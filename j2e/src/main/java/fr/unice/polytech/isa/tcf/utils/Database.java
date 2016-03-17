@@ -1,8 +1,8 @@
 package fr.unice.polytech.isa.tcf.utils;
 
-import fr.unice.polytech.isa.tcf.entities.Customer;
-import fr.unice.polytech.isa.tcf.entities.Item;
-import fr.unice.polytech.isa.tcf.entities.Order;
+import fr.unice.polytech.isa.entities.Customer;
+import fr.unice.polytech.isa.entities.Item;
+import fr.unice.polytech.isa.entities.Order;
 
 import javax.ejb.Singleton;
 import javax.xml.crypto.Data;

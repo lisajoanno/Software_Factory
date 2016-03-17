@@ -1,7 +1,7 @@
 package fr.unice.polytech.isa.tcf;
 
 
-import fr.unice.polytech.isa.tcf.exceptions.AlreadyExistingCustomerException;
+import fr.unice.polytech.isa.exceptions.AlreadyExistingCustomerException;
 
 import javax.ejb.Local;
 

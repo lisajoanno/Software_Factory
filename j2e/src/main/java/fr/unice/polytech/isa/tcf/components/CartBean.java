@@ -3,9 +3,9 @@ package fr.unice.polytech.isa.tcf.components;
 
 import fr.unice.polytech.isa.tcf.CartModifier;
 import fr.unice.polytech.isa.tcf.Payment;
-import fr.unice.polytech.isa.tcf.entities.Customer;
-import fr.unice.polytech.isa.tcf.entities.Item;
-import fr.unice.polytech.isa.tcf.exceptions.PaymentException;
+import fr.unice.polytech.isa.entities.Customer;
+import fr.unice.polytech.isa.entities.Item;
+import fr.unice.polytech.isa.exceptions.PaymentException;
 import fr.unice.polytech.isa.tcf.interceptors.CartCounter;
 import fr.unice.polytech.isa.tcf.interceptors.Logger;
 

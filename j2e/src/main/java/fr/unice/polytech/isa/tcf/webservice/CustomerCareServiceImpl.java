@@ -4,10 +4,10 @@ package fr.unice.polytech.isa.tcf.webservice;
 import fr.unice.polytech.isa.tcf.CatalogueExploration;
 import fr.unice.polytech.isa.tcf.CustomerRegistration;
 import fr.unice.polytech.isa.tcf.Tracker;
-import fr.unice.polytech.isa.tcf.entities.Cookies;
-import fr.unice.polytech.isa.tcf.entities.OrderStatus;
-import fr.unice.polytech.isa.tcf.exceptions.AlreadyExistingCustomerException;
-import fr.unice.polytech.isa.tcf.exceptions.UnknownOrderId;
+import fr.unice.polytech.isa.entities.Cookies;
+import fr.unice.polytech.isa.entities.OrderStatus;
+import fr.unice.polytech.isa.exceptions.AlreadyExistingCustomerException;
+import fr.unice.polytech.isa.exceptions.UnknownOrderId;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;

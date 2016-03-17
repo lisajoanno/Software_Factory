@@ -1,7 +1,7 @@
 package fr.unice.polytech.isa.tcf.utils;
 
-import fr.unice.polytech.isa.tcf.entities.Customer;
-import fr.unice.polytech.isa.tcf.exceptions.ExternalPartnerException;
+import fr.unice.polytech.isa.entities.Customer;
+import fr.unice.polytech.isa.exceptions.ExternalPartnerException;
 import org.apache.cxf.jaxrs.client.WebClient;
 import org.json.JSONObject;
 

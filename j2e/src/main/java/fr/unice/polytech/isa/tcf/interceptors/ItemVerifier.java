@@ -1,6 +1,6 @@
 package fr.unice.polytech.isa.tcf.interceptors;
 
-import fr.unice.polytech.isa.tcf.entities.Item;
+import fr.unice.polytech.isa.entities.Item;
 
 import javax.interceptor.AroundInvoke;
 import javax.interceptor.InvocationContext;

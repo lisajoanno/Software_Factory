@@ -1,8 +1,8 @@
 package fr.unice.polytech.isa.tcf.components.carts;
 
 import fr.unice.polytech.isa.tcf.components.CartBean;
-import fr.unice.polytech.isa.tcf.entities.Customer;
-import fr.unice.polytech.isa.tcf.entities.Item;
+import fr.unice.polytech.isa.entities.Customer;
+import fr.unice.polytech.isa.entities.Item;
 
 import javax.ejb.Stateful;
 import java.util.*;

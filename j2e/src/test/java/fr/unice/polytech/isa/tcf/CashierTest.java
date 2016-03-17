@@ -2,11 +2,11 @@ package fr.unice.polytech.isa.tcf;
 
 
 import arquillian.AbstractTCFTest;
-import fr.unice.polytech.isa.tcf.entities.Cookies;
-import fr.unice.polytech.isa.tcf.entities.Customer;
-import fr.unice.polytech.isa.tcf.entities.Item;
-import fr.unice.polytech.isa.tcf.entities.Order;
-import fr.unice.polytech.isa.tcf.exceptions.PaymentException;
+import fr.unice.polytech.isa.entities.Cookies;
+import fr.unice.polytech.isa.entities.Customer;
+import fr.unice.polytech.isa.entities.Item;
+import fr.unice.polytech.isa.entities.Order;
+import fr.unice.polytech.isa.exceptions.PaymentException;
 import fr.unice.polytech.isa.tcf.utils.BankAPI;
 import org.jboss.arquillian.junit.Arquillian;
 import org.junit.Before;

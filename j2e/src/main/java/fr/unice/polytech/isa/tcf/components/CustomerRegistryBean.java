@@ -2,8 +2,8 @@ package fr.unice.polytech.isa.tcf.components;
 
 import fr.unice.polytech.isa.tcf.CustomerFinder;
 import fr.unice.polytech.isa.tcf.CustomerRegistration;
-import fr.unice.polytech.isa.tcf.entities.Customer;
-import fr.unice.polytech.isa.tcf.exceptions.AlreadyExistingCustomerException;
+import fr.unice.polytech.isa.entities.Customer;
+import fr.unice.polytech.isa.exceptions.AlreadyExistingCustomerException;
 import fr.unice.polytech.isa.tcf.utils.Database;
 
 import javax.ejb.EJB;
