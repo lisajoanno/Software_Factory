@@ -1,7 +1,7 @@
-package fr.unice.polytech.isa.tcf.interceptors;
+package fr.unice.polytech.isa.interceptors;
 
 
-import fr.unice.polytech.isa.tcf.utils.Database;
+import fr.unice.polytech.isa.utils.Database;
 
 import javax.ejb.EJB;
 import javax.interceptor.AroundInvoke;

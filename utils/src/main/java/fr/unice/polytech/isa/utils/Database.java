@@ -1,4 +1,4 @@
-package fr.unice.polytech.isa.tcf.utils;
+package fr.unice.polytech.isa.utils;
 
 import fr.unice.polytech.isa.entities.Customer;
 import fr.unice.polytech.isa.entities.Item;

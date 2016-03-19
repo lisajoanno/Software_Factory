@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>fr.unice.polytech.isa</groupId>
 	<artifactId>tcf-backend</artifactId>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<version>1.0-SNAPSHOT</version>
 	<name>ISA :: The Cookie Factory :: J2E Backend</name>
 
@@ -69,21 +69,6 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- Dependency to integrate REST clients (order matters for CXF) -->
-		<dependency>
-			<groupId>org.apache.openejb</groupId>
-			<artifactId>openejb-cxf</artifactId>
-			<version>${versions.openejb}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.openejb</groupId>
-			<artifactId>openejb-cxf-rs</artifactId>
-			<version>${versions.openejb}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.json</groupId>
-			<artifactId>json</artifactId>
-			<version>20160212</version>
-		</dependency>
 		<!-- Dependencies for the testing frameworks (Junit, Mockito & Arquillian) -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -132,6 +117,22 @@
 			<scope>system</scope>
 			<version>1.0-SNAPSHOT</version>
 			<systemPath>${basedir}/../exceptions/target/exceptions-0.0.1-SNAPSHOT.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>fr.unice.polytech.isa</groupId>
+			<artifactId>utils</artifactId>
+			<scope>system</scope>
+			<version>1.0-SNAPSHOT</version>
+			<systemPath>${basedir}/../utils/target/utils-0.0.1-SNAPSHOT.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>fr.unice.polytech.isa</groupId>
+			<artifactId>interceptors</artifactId>
+			<scope>system</scope>
+			<version>1.0-SNAPSHOT</version>
+			<systemPath>${basedir}/../interceptors/target/interceptors-0.0.1-SNAPSHOT.jar</systemPath>
 		</dependency>
 
 	</dependencies>

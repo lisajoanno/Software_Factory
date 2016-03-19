@@ -2,13 +2,13 @@ package fr.unice.polytech.isa.tcf.components;
 
 import fr.unice.polytech.isa.tcf.OrderProcessing;
 import fr.unice.polytech.isa.tcf.Payment;
+import fr.unice.polytech.isa.utils.BankAPI;
+import fr.unice.polytech.isa.utils.Database;
 import fr.unice.polytech.isa.entities.Customer;
 import fr.unice.polytech.isa.entities.Item;
 import fr.unice.polytech.isa.entities.Order;
 import fr.unice.polytech.isa.exceptions.ExternalPartnerException;
 import fr.unice.polytech.isa.exceptions.PaymentException;
-import fr.unice.polytech.isa.tcf.utils.BankAPI;
-import fr.unice.polytech.isa.tcf.utils.Database;
 
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;

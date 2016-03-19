@@ -2,10 +2,10 @@ package fr.unice.polytech.isa.tcf.components;
 
 import fr.unice.polytech.isa.tcf.OrderProcessing;
 import fr.unice.polytech.isa.tcf.Tracker;
+import fr.unice.polytech.isa.utils.Database;
 import fr.unice.polytech.isa.entities.Order;
 import fr.unice.polytech.isa.entities.OrderStatus;
 import fr.unice.polytech.isa.exceptions.UnknownOrderId;
-import fr.unice.polytech.isa.tcf.utils.Database;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;

@@ -1,0 +1,68 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>fr.unice.polytech.isa</groupId>
+  <artifactId>wargenerator</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+
+  <name>wargenerator</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+  
+		<dependency>
+			<groupId>fr.unice.polytech.isa</groupId>
+			<artifactId>entities</artifactId>
+			<scope>system</scope>
+			<version>1.0-SNAPSHOT</version>
+			<systemPath>${basedir}/../entities/target/entities-0.0.1-SNAPSHOT.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>fr.unice.polytech.isa</groupId>
+			<artifactId>exceptions</artifactId>
+			<scope>system</scope>
+			<version>1.0-SNAPSHOT</version>
+			<systemPath>${basedir}/../exceptions/target/exceptions-0.0.1-SNAPSHOT.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>fr.unice.polytech.isa</groupId>
+			<artifactId>interceptors</artifactId>
+			<scope>system</scope>
+			<version>1.0-SNAPSHOT</version>
+			<systemPath>${basedir}/../interceptors/target/interceptors-0.0.1-SNAPSHOT.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>fr.unice.polytech.isa</groupId>
+			<artifactId>tcf-backend</artifactId>
+			<scope>system</scope>
+			<version>1.0-SNAPSHOT</version>
+			<systemPath>${basedir}/../j2e/target/tcf-backend.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>fr.unice.polytech.isa</groupId>
+			<artifactId>utils</artifactId>
+			<scope>system</scope>
+			<version>1.0-SNAPSHOT</version>
+			<systemPath>${basedir}/../utils/target/utils-0.0.1-SNAPSHOT.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>fr.unice.polytech.isa</groupId>
+			<artifactId>webservice</artifactId>
+			<scope>system</scope>
+			<version>1.0-SNAPSHOT</version>
+			<systemPath>${basedir}/../webservice/target/webservice-0.0.1-SNAPSHOT.jar</systemPath>
+		</dependency>
+		
+  </dependencies>
+</project>

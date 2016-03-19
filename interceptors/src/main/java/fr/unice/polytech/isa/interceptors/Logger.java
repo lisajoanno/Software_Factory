@@ -1,4 +1,4 @@
-package fr.unice.polytech.isa.tcf.interceptors;
+package fr.unice.polytech.isa.interceptors;
 
 import javax.interceptor.AroundInvoke;
 import javax.interceptor.InvocationContext;
