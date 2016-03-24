@@ -65,4 +65,40 @@
 		</dependency>
 		
   </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.6</version>
+        <configuration>
+          <webXml>${basedir}/WEB-INF/web.xml</webXml>
+        </configuration>
+      </plugin>
+    </plugins>
+            <resources>
+           	<resource>
+                <directory>${basedir}/../entities/target/</directory>
+            </resource>
+            <resource>
+                <directory>${basedir}/../exceptions/target/</directory>
+            </resource>
+            <resource>
+                <directory>${basedir}/../interceptors/target/</directory>
+            </resource>
+            <resource>
+                <directory>${basedir}/../exceptions/target/</directory>
+            </resource>       
+            	<resource>
+                <directory>${basedir}/../j2e/target/</directory>
+            </resource>
+            <resource>
+                <directory>${basedir}/../utils/target/</directory>
+            </resource>
+            <resource>
+                <directory>${basedir}/../webservice/target/</directory>
+            </resource>
+        </resources>
+  </build>
+
 </project>
