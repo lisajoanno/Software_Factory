@@ -30,7 +30,7 @@ cd exceptions
 mvn $MVN_OPT clean
 cd ..
 
-## Building the .Net system
-cd dotNet
-./compile.sh
-cd ..
+
+#~ RED='\033[0;31m'
+#~ NC='\033[0m' # No Color
+#~ printf "I ${RED}love${NC} Stack Overflow\n"
