@@ -10,9 +10,33 @@
   <name>wargenerator</name>
   <url>http://maven.apache.org</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <versions.tomee.embedded>1.7.3</versions.tomee.embedded>
+    </properties>
+
+    <profiles>
+        <profile>
+            <id>stable</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <versions.javaee>6.0-6</versions.javaee>
+                <versions.openejb>4.7.3</versions.openejb>
+                <versions.tomee>1.7.3</versions.tomee>
+            </properties>
+        </profile>
+        <profile>
+            <!-- Use mvn -P latest to activate these dependencies -->
+            <id>latest</id>
+            <properties>
+                <versions.javaee>7.0-SNAPSHOT</versions.javaee>
+                <versions.openejb>5.0.0-SNAPSHOT</versions.openejb>
+                <versions.tomee>2.0.0-SNAPSHOT</versions.tomee>
+            </properties>
+        </profile>
+    </profiles>
 
   <dependencies>
   
@@ -75,6 +99,17 @@
           <webXml>${basedir}/WEB-INF/web.xml</webXml>
         </configuration>
       </plugin>
+      <plugin>
+            <groupId>org.apache.openejb.maven</groupId>
+            <artifactId>tomee-maven-plugin</artifactId>
+            <version>${versions.tomee.embedded}</version>
+            <configuration>
+                    <!-- From TomEE to TomEE+ to support the web services stack -->
+                <tomeeClassifier>plus</tomeeClassifier>
+                <args>-Xmx512m -XX:PermSize=256m</args>
+                <deployOpenEjbApplication>true</deployOpenEjbApplication>
+            </configuration>
+        </plugin>
     </plugins>
             <resources>
            	<resource>
